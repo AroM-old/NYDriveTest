@@ -4,8 +4,10 @@
     <string name="app_name">NYDrive Test</string>
     <string name="hello_world">Hello world, SplashActivity!</string>
     <string name="Version">Version 0.1a</string>
-    <string name="rules">Bienvenidos a la guia no oficial para pasar el examen practico
-    para conducir del estado de NY. Esta aplicacion contiene 101 preguntas  </string>
+    <string name="rules">Welcome to the NY drive test quiz app, press start to complete 20 questions
+                         at the end you can check your score and verify the answer, press back and try
+                         again until you master. You can change the difficult level in the settings
+                         options to easy, medium or hard, practice and pass the NY driving test. </string>
 
     <style name="ButtonText">
         <item name="android:layout_width">fill_parent</item>
