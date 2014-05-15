@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">NYDrive Test</string>
+    <string name="hello_world">Hello world, SplashActivity!</string>
+    <string name="Version">Version 0.1a</string>
+    <string name="rules">Bienvenido a la aplicación de prueba prueba de NY unidad, presione inicio
+        para completar 20 preguntas al final puede comprobar su cuenta y verificar la respuesta,
+        pulse de nuevo y vuelve a intentarlo hasta que lo amo. Puede cambiar el nivel de dificultad
+        en las opciones de configuración de fácil, medio o duro, la práctica y aprobar el examen de
+        conducir NY. </string>
+
+    <style name="ButtonText">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_margin">3dp</item>
+        <item name="android:textSize">15dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">2</item>
+    </style>
+
+</resources>
