@@ -16,7 +16,6 @@ import com.aarc.nydrivetest.nydrive.util.Utility;
 
 /**
  * @author robert.hinds
- *
  */
 public class AnswersActivity extends Activity implements OnClickListener {
 
@@ -24,9 +23,9 @@ public class AnswersActivity extends Activity implements OnClickListener {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.answers);
-        GamePlay currentGame = ((NYTestApplication)getApplication()).getCurrentGame();
+        GamePlay currentGame = ((NYTestApplication) getApplication()).getCurrentGame();
 
-        TextView results = (TextView)findViewById(R.id.answers);
+        TextView results = (TextView) findViewById(R.id.answers);
         String answers = Utility.getAnswers(currentGame.getQuestions());
         results.setText(answers);
 
@@ -37,7 +36,6 @@ public class AnswersActivity extends Activity implements OnClickListener {
     }
 
 
-
     /* (non-Javadoc)
      * @see android.app.Activity#onKeyDown(int, android.view.KeyEvent)
      *
@@ -45,11 +43,9 @@ public class AnswersActivity extends Activity implements OnClickListener {
      * to prevent users from navigating back in to the quiz
      */
     @Override
-    public boolean onKeyDown(int keyCode, KeyEvent event)
-    {
-        switch (keyCode)
-        {
-            case KeyEvent.KEYCODE_BACK :
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        switch (keyCode) {
+            case KeyEvent.KEYCODE_BACK:
                 return true;
         }
 
@@ -59,8 +55,8 @@ public class AnswersActivity extends Activity implements OnClickListener {
 
     @Override
     public void onClick(View v) {
-        switch (v.getId()){
-            case R.id.finishBtn :
+        switch (v.getId()) {
+            case R.id.finishBtn:
                 finish();
         }
     }
