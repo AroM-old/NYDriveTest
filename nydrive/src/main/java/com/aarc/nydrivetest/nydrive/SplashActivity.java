@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.database.SQLException;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -13,17 +14,37 @@ import com.aarc.nydrivetest.nydrive.db.DBHelper;
 import com.aarc.nydrivetest.nydrive.quiz.Constants;
 import com.aarc.nydrivetest.nydrive.quiz.GamePlay;
 import com.aarc.nydrivetest.nydrive.quiz.Question;
+import com.newrelic.agent.android.NewRelic;
 
 import java.io.IOException;
 import java.util.List;
 
+
+
 public class SplashActivity extends Activity implements OnClickListener{
+
+    private static final String TAG = "SplashActivity";
 
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.welcome);
+        Log.e(TAG, "Splash screen onCreate");
+
+       /*
+        //Google analytics
+        Tracker t = ((MyTracker) getApplication()).getTracker(MyTracker.TrackerName.APP_TRACKER);
+        //Set Screen name.
+        t.setScreenName("SplashActivity");
+        //Send a screen view
+        //t.send(new HitBuilders.AppViewBuilder().build());
+        */
+
+        //NewRelic
+        NewRelic.withApplicationToken(
+                "AAea00e5da3ad1f2b616026037e0334e87cb6ac7e7"
+        ).start(this.getApplication());
 
         //////////////////////////////////////////////////////////////////////
         //////// GAME MENU  /////////////////////////////////////////////////

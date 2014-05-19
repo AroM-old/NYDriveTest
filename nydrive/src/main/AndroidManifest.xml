@@ -25,5 +25,9 @@
         <activity android:name=".SettingsActivity" android:screenOrientation="portrait"/>
         <activity android:name=".AnswersActivity" android:screenOrientation="portrait"/>
     </application>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <!-- Google Analytics V4 need this value for tracking -->
+    <meta-data android:name="com.google.android.gms.analytics.globalConfigResource" android:resource="@xml/global_tracker"/>
 
 </manifest>
